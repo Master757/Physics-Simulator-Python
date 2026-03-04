@@ -46,7 +46,7 @@ This "Skeleton" approach provides high torsional rigidity while remaining lightw
 | Right Click | Delete Object (Atomic ID wipe) |
 | UP / DOWN | Adjust Gravity |
 | O/P | Adjust Bounce Factor|
-| Z | Zero Gravity Toggle |
+| Z | Zero Gravity Toggle [Zero <--> previous record of usage status] |
 
 ## Requirements
 * Python 3.x
