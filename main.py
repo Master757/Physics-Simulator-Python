@@ -11,6 +11,7 @@ def main():
     FPS = 60
     bounce = 0.8
     DT = 1.0 / FPS
+    prev_gravity = 700.0
     current_gravity = 700.0
     
     renderer = Render(WIDTH, HEIGHT)
@@ -61,11 +62,17 @@ def main():
                 
                 # Gravity Controls
                 if event.key == pygame.K_UP:
+                    prev_gravity = current_gravity
                     current_gravity += 100.0
                 if event.key == pygame.K_DOWN:
+                    prev_gravity = current_gravity
                     current_gravity -= 100.0
                 if event.key == pygame.K_z:
-                    current_gravity = 0.0
+                    if current_gravity == 0.0:
+                        current_gravity = prev_gravity
+                    else:
+                        prev_gravity =current_gravity
+                        current_gravity = 0.0
 
             # Mouse Interactions
             if event.type == pygame.MOUSEBUTTONDOWN:
