@@ -45,6 +45,7 @@ This "Skeleton" approach provides high torsional rigidity while remaining lightw
 | Left Click | Grab and Move |
 | Right Click | Delete Object (Atomic ID wipe) |
 | UP / DOWN | Adjust Gravity |
+| O/P | Adjust Bounce Factor|
 | Z | Zero Gravity Toggle |
 
 ## Requirements
